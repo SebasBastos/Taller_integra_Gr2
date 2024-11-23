@@ -23,18 +23,22 @@ En esta sección se presentan los diagramas que describen la arquitectura y el f
 ### Primer Nivel
 
 Aquí se presenta una vista generalizada del sistema. Donde se puede observar en la figura 2 como el bloque del sistema APRS recibe información de la antena y se alimenta con una fuente de poder y como la salida se presenta como el mapa en linea para observar la ubicación de las bicicletas.
+![nivel1](https://github.com/SebasBastos/Taller_integra_Gr2/blob/main/Imagenes/nivel1.png)
 
 ### Segundo Nivel
 
 En este nivel se profundiza en el sistema descrito en el primer nivel. En este caso, el dispositivo de rastreo se descompone en sus componentes principales. La información es recibida a través de la antena el cual conecta con el receptor GPS el cual lo envía al demodulador APRS para que la computadora pueda procesar la información y finalmente transmitirla.
+![nivel2](https://github.com/SebasBastos/Taller_integra_Gr2/blob/main/Imagenes/nivel2.png)
 
 ### Tercer Nivel
 
 En este punto se entra en mayor detalle de los componentes que componen los bloques principales del sistema. En el bloque LoRa32 se observa como al receptor GPS ingresa la información recibida de la antena donde luego se demodula y se interpreta en el MPU (Main processing unit). Luego en el RPU (Real-time processing unit) se hace el muestreo de los datos para que se puedan procesar más adelante y ser transmitidas al servidor.
+![nivel3](https://github.com/SebasBastos/Taller_integra_Gr2/blob/main/Imagenes/nivel3.png)
 
 ### Cuarto Nivel
 
 Por último aquí se tiene un enfoque más orientado a la aplicación donde se incluye la bicicleta con el sistema de anclaje y la caja protectora para el tracker. El cual ahora también se muestra como debe contener una batería externa para alargar el tiempo de funcionamiento del tracker. Esta caja debe asegurarse de proteger de impactos y de mantener el agua fuera del sistema electrónico. Una vez esta es procesada como se describió en el nivel anterior, se transmite a un servidor que se maneja a través de una aplicación que solicitará la autenticación para finalmente observar la ubicación en tiempo real de la bicicleta.
+![nivel4](https://github.com/SebasBastos/Taller_integra_Gr2/blob/main/Imagenes/nivel4.png)
 
 ### Diagrama de Flujo
 
