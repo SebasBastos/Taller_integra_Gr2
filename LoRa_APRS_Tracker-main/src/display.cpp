@@ -353,7 +353,7 @@ void startupScreen(uint8_t index, const String& version) {
     #ifdef HAS_TFT
         cleanTFT();
     #endif
-    logger.log(logging::LoggerLevel::LOGGER_LEVEL_INFO, "Main", "RichonGuzman (CA2RXU) --> LoRa APRS Tracker/Station");
+    logger.log(logging::LoggerLevel::LOGGER_LEVEL_INFO, "Main", "Grupo 2 --> LoRa APRS Tracker/Station");
     logger.log(logging::LoggerLevel::LOGGER_LEVEL_INFO, "Main", "Version: %s", version);
 }
 
